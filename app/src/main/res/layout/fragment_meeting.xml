@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:background="#fff">
+        <TextView
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我的会议"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginLeft="70dp"/>
+        <ImageView
+            android:id="@+id/meeting_today"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_meeting_today"
+            android:layout_marginRight="15dp" />
+        <ImageView
+            android:id="@+id/meeting_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/meeting_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#fff">
+                    <ImageView
+                        android:id="@+id/meeting_arrow_left"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="@mipmap/last" />
+                    <TextView
+                        android:id="@+id/meeting_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/meeting_arrow_right"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp"
+                        android:background="@mipmap/next" />
+                </RelativeLayout>
+                <cn.edu.sdnu.i.livemeeting.weiget.WeekView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+                <cn.edu.sdnu.i.livemeeting.weiget.CalendarView
+                    android:id="@+id/calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    calendarview:choose_type="single"
+                    calendarview:show_holiday="true"
+                    calendarview:show_lunar="true"
+                    calendarview:show_term="true"
+                    calendarview:switch_choose="false" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/meeting_rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

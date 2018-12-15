@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.edu.sdnu.i.livemeeting">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.LiveApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/pick_time"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".zxing.activity.CaptureActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.SingleChatActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".relationship.ShowOwnInformationActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".relationship.ShowOthersInformationActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".relationship.ShowAddFriendActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".relationship.ShowAddFrienDdetailedActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.StartActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CreateMeetingActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.ChooseFriendsActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.JoinMeetingActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.GroupChatActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.GroupInfoActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.ShowGroupMemActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.ManagerActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.VoteActivity" />
+        <activity android:name=".activity.bmob.UsersVoteActivity" />
+        <activity android:name=".activity.NewEditProfileActivity"></activity>
+    </application>
+
+</manifest>

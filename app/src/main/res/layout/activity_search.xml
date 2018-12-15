@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.SearchActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/search"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"/>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <EditText
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_main"
+                android:hint="搜索" />
+            <com.wayww.edittextfirework.FireworkView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/search_fire_work"/>
+        </FrameLayout>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            style="?borderlessButtonStyle"
+            android:text="搜索"
+            android:id="@+id/do_search"
+            android:textSize="16sp"
+            android:textColor="#FF9800"
+            android:background="#fff"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/show_search_results_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
+
+<!--<android.support.v7.widget.SearchView-->
+<!--android:id="@+id/search_main"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--app:queryHint="搜索"/>-->

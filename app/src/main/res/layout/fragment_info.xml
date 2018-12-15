@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/my_info_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/cardBac">
+
+                <LinearLayout
+                    android:id="@+id/avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/colorPrimary"/>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/home_cardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="15dp"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="10dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="2dp"
+                                android:layout_gravity="bottom"
+                                android:gravity="center"
+                                android:layout_marginBottom="20dp">
+                                <ImageView
+                                    android:id="@+id/avatar_img"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/left_ava"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="10dp"/>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="3dp"
+                                    android:layout_gravity="center">
+                                    <TextView
+                                        android:id="@+id/title_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="luohuafeixue"
+                                        android:textColor="@color/grey"
+                                        android:textSize="20sp"
+                                        android:typeface="sans"
+                                        android:layout_marginBottom="3dp"/>
+                                    <TextView
+                                        android:id="@+id/title_sgin"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="11111111"
+                                        android:textColor="@color/grey"
+                                        android:textSize="15sp"
+                                        android:layout_gravity="center"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <cn.edu.sdnu.i.livemeeting.profile.ProfileEdit
+                        android:id="@+id/nick_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp" />
+
+                    <cn.edu.sdnu.i.livemeeting.profile.ProfileEdit
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp" />
+
+
+                    <cn.edu.sdnu.i.livemeeting.profile.ProfileEdit
+                        android:id="@+id/sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp" />
+
+
+                    <cn.edu.sdnu.i.livemeeting.profile.ProfileEdit
+                        android:id="@+id/renzheng"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp" />
+
+
+                    <cn.edu.sdnu.i.livemeeting.profile.ProfileEdit
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp" />
+
+                    <cn.edu.sdnu.i.livemeeting.profile.ProfileTextView
+                        android:id="@+id/id"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <cn.edu.sdnu.i.livemeeting.profile.ProfileTextView
+                        android:id="@+id/level"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <cn.edu.sdnu.i.livemeeting.profile.ProfileTextView
+                        android:id="@+id/get_nums"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <cn.edu.sdnu.i.livemeeting.profile.ProfileTextView
+                        android:id="@+id/send_nums"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:id="@+id/complete"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/app_lvjian_chat_sends"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

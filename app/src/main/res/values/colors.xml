@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1eb9f2</color>
+    <color name="colorPrimaryDark">#6ad3fa</color>
+    <color name="colorAccent">#1eb9f2</color>
+
+
+    <color name="teal">#00796B</color>
+    <color name="purple">#b137b7</color>
+    <color name="zt">#efeeee</color>
+
+
+
+    <!-- QRCode scanner color begin -->
+
+
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="result_view">#B0000000</color>
+
+    <color name="viewfinder_frame">#90FFFFFF</color>
+
+    <color name="result_point_color">#C0FFFF00</color>
+
+    <color name="laser_color">#0F0</color>
+
+    <color name="corner_color">#00FF00</color>
+
+    <!-- QRCode scanner color end -->
+    <color name="newsbg">#02548e</color>
+    <color name="perbg">#33b5e6</color>
+    <color name="mainbg">#8000</color>
+
+    <color name="numColor">#afafaf</color>
+    <color name="pink">#ff8197</color>
+    <color name="textColor">#7d8995</color>
+    <color name="textThickeningColor">#586069</color>
+    <color name="red">#f32e2e</color>
+    <color name="light_red">#ffd7a1a1</color>
+    <color name="bac">#e6e6e6</color>
+    <color name="yellow">#ffd000</color>
+    <color name="line">#ededed</color>
+    <color name="cardBac">#fafafa</color>
+    <color name="blue">#0787b6</color>
+    <color name="grey">#607D8B</color>
+    <color name="orange">#F57C00</color>
+    <color name="black">#000</color>
+    <color name="white">#ffffff</color>
+    <color name="classColor">#1fbbd2</color>
+    <color name="newTextColor">#9698a4</color>
+
+    <!--fanLayoutManager中使用 那么多颜色改的时候删除就行了-->
+    <color name="dark_cerulean">#134785</color>
+    <color name="dodger_blue">#249ff4</color>
+    <color name="mantis">#55b859</color>
+    <color name="dim_gray">#6f6f6f</color>
+    <color name="manatee">#979797</color>
+    <color name="dark_orchid">#a62ab9</color>
+    <color name="timberwolf">#d8d8d8</color>
+    <color name="portland_orange">#fc5f23</color>
+    <color name="usc_gold">#fec804</color>
+
+    <color name="chat_bac">#f2f3f5</color>
+    <color name="chat_text_bac">#0188fb</color>
+</resources>

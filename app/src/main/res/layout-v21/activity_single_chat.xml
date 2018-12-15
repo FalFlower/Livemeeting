@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SingleChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="#fefdfd"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/single_bac"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/bac" />
+
+        <TextView
+            android:id="@+id/single_bac_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="单人聊天"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/msg_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/chat_bac"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <EditText
+                android:id="@+id/input_msg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/app_lvjian_rbtn_normal_background"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/send_msg"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/btn_bac_add_send_message"
+                android:text="发送"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/single_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/single_camera"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bac_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/single_pic"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bac_pic" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

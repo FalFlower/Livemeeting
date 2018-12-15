@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".relationship.ShowOwnInformationActivity"
+    android:background="@color/white">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collasing_O"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                android:id="@+id/personality_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"/>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_O"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <cn.edu.sdnu.i.livemeeting.profile.ProfileSimpleTextView
+                android:id="@+id/simple_id_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <cn.edu.sdnu.i.livemeeting.profile.ProfileSimpleTextView
+                android:id="@+id/simple_nickname_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <cn.edu.sdnu.i.livemeeting.profile.ProfileSimpleTextView
+                android:id="@+id/simple_remark_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <cn.edu.sdnu.i.livemeeting.profile.ProfileSimpleTextView
+                android:id="@+id/simple_gender_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <cn.edu.sdnu.i.livemeeting.profile.ProfileSimpleTextView
+                android:id="@+id/simple_group_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <cn.edu.sdnu.i.livemeeting.profile.ProfileSimpleTextView
+                android:id="@+id/simple_sign_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <cn.edu.sdnu.i.livemeeting.profile.ProfileSimpleTextView
+                android:id="@+id/simple_location_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <cn.edu.sdnu.i.livemeeting.profile.ProfileSimpleTextView
+                android:id="@+id/simple_position_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#fff"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:layout_marginBottom="10dp">
+                <Button
+                    android:id="@+id/btn_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:background="@drawable/btn_bac_add_friends"
+                    android:text="加好友"
+                    android:layout_marginRight="5dp"/>
+                <Button
+                    android:id="@+id/btn_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_bac_add_send_message"
+                    android:text="发消息"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

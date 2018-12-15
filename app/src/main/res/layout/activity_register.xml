@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/activity_register"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/titlebar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="#7d7c7c" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="15dp"-->
+        <!--android:paddingLeft="30dp"-->
+        <!--android:paddingRight="30dp"-->
+        <!--android:paddingTop="30dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableLeft="@drawable/ic_user" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/account"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:hint="请输入注册账号（至少为8个字符，仅限英文与数字）"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textColorHint="#ccc"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="#3000" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="15dp"-->
+        <!--android:paddingLeft="30dp"-->
+        <!--android:paddingRight="30dp"-->
+        <!--android:paddingTop="15dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableLeft="@drawable/ic_pwd" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/password"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:hint="请输入登录密码（至少为8个字符）"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textColorHint="#ccc"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="#3000" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="30dp"-->
+        <!--android:paddingLeft="30dp"-->
+        <!--android:paddingRight="30dp"-->
+        <!--android:paddingTop="15dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableLeft="@drawable/ic_pwd" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/confirm_password"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:hint="请确认登录密码（至少为8个字符）"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textColorHint="#ccc"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/register"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginRight="50dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@drawable/btn_bkg_red_rect_round"-->
+        <!--android:text="注册新账号"-->
+        <!--android:textColor="@color/colorPrimaryDark" />-->
+
+<!--</LinearLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:paddingTop="70dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_add"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#2ea67f"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:text="注册"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="30dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#f0f7f4"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:hint="用户名"
+                            android:inputType="textPersonName"
+                            android:paddingBottom="2dp"
+                            android:textColor="#f0f7f4"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="30dp">
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#f0f7f4"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:hint="密码"
+                            android:inputType="textPassword"
+                            android:paddingBottom="2dp"
+                            android:textColor="#f0f7f4"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="30dp">
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#f0f7f4"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/confirm_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:hint="重复密码"
+                            android:inputType="textPassword"
+                            android:paddingBottom="2dp"
+                            android:textColor="#f0f7f4"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bt_shape_2"
+                    android:stateListAnimator="@drawable/state_list_animator_z"
+                    android:text="下一步"
+                    android:textColor="#2fa881"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/reg_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/plus_x"
+            android:transitionName="loginFab"
+            app:fabSize="normal" />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".relationship.ShowAddFrienDdetailedActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_left_arrow"
+            android:text="好友验证"
+            android:textColor="#2c2c2c"
+            android:clickable="true"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="好友管理"
+            android:textColor="#2c2c2c"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            android:textSize="20sp"
+            android:textColor="#5e5d5d"/>
+        <EditText
+            android:id="@+id/set_friend_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:textColor="#c2c2c2"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分组"
+            android:textSize="20sp"
+            android:textColor="#5e5d5d"/>
+        <TextView
+            android:id="@+id/set_friend_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:textColor="#aaa9a9"
+            android:text="我的好友"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/send_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#1eb9f2"
+        android:layout_margin="5dp"
+        android:text="发送请求"
+        android:textColor="#fff" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--底层的左边距离上层左边3dp, 底层的顶部，距离上层的顶部6dp,如果不做这个控制，底层和上层的左侧和上侧会重合在一起-->
+    <item>
+        <shape>
+            <solid />
+            <corners android:radius="10dip"/>
+        </shape>
+    </item>
+
+</layer-list>

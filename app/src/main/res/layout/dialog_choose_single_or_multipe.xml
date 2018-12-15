@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/create_meet_list2"
+        android:text="单选"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <Button
+        android:id="@+id/multiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/create_meet_list2"
+        android:text="多选"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <Button
+        android:id="@+id/cancel_out_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/create_meet_list2"
+        android:text="取消" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</LinearLayout>

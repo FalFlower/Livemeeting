@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 整体的背景颜色 -->
+    <item>
+        <color android:color="@color/white" />
+    </item>
+    <item>
+        <bitmap
+            android:gravity="fill"
+            android:src="@drawable/bac_1"
+            android:scaleType="fitXY"/>
+    </item>
+    <!--&lt;!&ndash; 顶部 &ndash;&gt;-->
+    <!--<item>-->
+    <!--<bitmap-->
+    <!--android:gravity="top|center_horizontal"-->
+    <!--android:scaleType="center"-->
+    <!--android:src="@drawable/splash_top" />-->
+    <!--</item>-->
+    <!--&lt;!&ndash; 底部 &ndash;&gt;-->
+    <!--<item>-->
+    <!--<bitmap   android:gravity="bottom|center_horizontal"-->
+    <!--android:scaleType="center"-->
+    <!--android:src="@drawable/splash_bottom" />-->
+    <!--</item>-->
+
+</layer-list>
